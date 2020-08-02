@@ -18,6 +18,7 @@ fi
 cd $proj_name
 mkdir -p project
 mkdir -p src/main/scala/$proj_name
+mkdir -p src/hardware/outputs
 
 ## create config
 echo "sbt.version=$sbt_ver" > project/build.properties

@@ -14,6 +14,7 @@ class and_gate extends Component {
 
 object myVerilogTop {
   def main(args: Array[String]) {
-    SpinalVerilog(new and_gate)
+//    SpinalVerilog(new and_gate)
+    SpinalConfig(targetDirectory = "hardware/outputs").generateVerilog(new and_gate)
   }
 }
